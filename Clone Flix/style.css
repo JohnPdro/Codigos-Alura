@@ -6,8 +6,17 @@ body {
     background-color: #000000;
     background-position: center bottom;
     background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
 }
 
+@media only screen and (max-width: 600px) {
+    body {
+        background-size: contain;
+        background-color: #641511;
+        background-position: center top !important;
+    }
+}
 
 .container {
     text-align: center;
@@ -15,33 +24,20 @@ body {
 }
 
 .titulo {
-    color: #ffffff;
+    color: red;
     margin: 0 0 5px;
 }
 
-.subtitulo {
-    color: #ffffff;
-    margin-top: 5px;
+.container {
+    text-align: center;
+    padding: 20px;
 }
 
-input {
-    margin: 12px;
-    padding: 6px;
-    border-radius: 5px;
+
+body>img {
+    margin: 0 10px;
 }
 
-label {
-    color: white;
-}
-
-button {
-    margin-top: 12px;
-    padding: 4px 8px;
-    border-radius: 10px;
-    background: #ffffff;
-}
-
-h2 {
-    color: #ffffff;
-    font-size: 30px;
+img {
+    max-height: 250px;
 }
